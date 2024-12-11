@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using WebProject.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<DataBaseContext>(options =>
+{
+	options.UseSqlServer("Server=DESKTOP-EE4GU60\\SQLEXPRESS;Database=BarberDB;Trusted_Connection=True;TrustServerCertificate=True;");
+});
 
 var app = builder.Build();
 
