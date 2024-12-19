@@ -1,8 +1,51 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Welcome to Our Barber Shop";
 }
 
-<div class="text-center">
-    <h1 class="display-4">MAMAMINI</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<head>
+    <link href="~/css/home.css" rel="stylesheet" />
+</head>
+
+
+<div class="index-background">
+    <div class="content">
+        <div class="text-center my-5">
+            <h2>Our Services</h2>
+            <p>Choose from a variety of grooming services to look your best.</p>
+        </div>
+
+        <div class="row justify-content-center gap-5">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Haircut">
+                    <div class="card-body">
+                        <h5 class="card-title">Haircut</h5>
+                        <p class="card-text">Get a fresh, clean haircut from our expert barbers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Shave">
+                    <div class="card-body">
+                        <h5 class="card-title">Shave</h5>
+                        <p class="card-text">Enjoy a smooth shave with the finest grooming products.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Beard Grooming">
+                    <div class="card-body">
+                        <h5 class="card-title">Beard Grooming</h5>
+                        <p class="card-text">Maintain your beard with precision and care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center my-5">
+            <a href="/book" class="btn btn-primary btn-lg">Book Your Appointment</a>
+        </div>
+    </div>
 </div>
