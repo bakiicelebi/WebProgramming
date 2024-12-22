@@ -1,13 +1,50 @@
 ﻿body {
     font-family: 'Arial', sans-serif;
 }
+
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     overflow-x: hidden; /* Yatay kaydırmayı engelle */
+    background-color: #1f2d32;
 }
+
+
+.navbar {
+    padding: 0; /* Boşlukları azalt */
+    margin: 0;
+    background-color: #1f2d32;
+}
+
+.navbar-nav {
+    gap: 1rem;
+}
+
+.navbar-img {
+    height: 12rem; /* Logonun boyutunu küçült */
+    width: auto;
+    margin: 0;
+    padding-right: 1rem;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(189, 57, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' border-color='rgba(189, 57, 0, 1)' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(189, 57, 0, 1);
+    border-width: 2px;
+}
+
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(189, 57, 0, 1);
+    }
+
+
 
 .navbar-brand {
     font-size: 1.8rem;
@@ -15,22 +52,51 @@ body, html {
     text-transform: uppercase;
 }
 
-.navbar-nav .nav-link {
-    font-size: 1.2rem;
-    padding: 10px 15px;
+.active {
+    color: aliceblue !important;
 }
+
+
+.nav-link {
+    letter-spacing: 1.5px;
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 1.3rem;
+    color: rgba(189, 57, 0, 1);
+    text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+    font-family: Arial;
+    padding: 10px 15px;
+    border-color: aliceblue;
+    transition: all 1s ease; /* Yumuşak geçiş için */
+    align-self: center;
+}
+
+.navbar-nav:hover .nav-link {
+    opacity: 0.5; /* Varsayılan olarak diğer linkleri soluklaştır */
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1); /* Hover olduğunda büyütme efekti */
+    opacity: 1; /* Hover olan link tam opak olur */
+    color: rgba(189, 57, 0, 1);
+}
+
 
 header {
-    color: white;
+    background-color: #1f2d32;
+    color: #bb5125;
     text-align: center;
-    padding: 15px 0;
+    font-family: Perpetua;
+    padding: 0rem;
 }
 
-    header h1 {
-        font-size: 3.5rem;
-        font-weight: bold;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    }
+.navbar-collapse {
+    padding-right: 15px;
+}
+
+
 
 footer {
     background-color: #333;

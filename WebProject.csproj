@@ -17,6 +17,11 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\png\celebiBarber.png" />
   </ItemGroup>
 
 </Project>

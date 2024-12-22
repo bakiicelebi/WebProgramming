@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DE8ExruAW+VWjZpphB/2EVUwu+Wn7JHbTHwRrLMUzGY=",
+  "Hash": "sd30r2GxjoqOSZWMbjnIIGbQOKSBhyzb24wYBwc7SEo=",
   "Source": "WebProject",
   "BasePath": "_content/WebProject",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebProject.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\assets\\png\\celebiBarber.png",
+      "SourceId": "WebProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\",
+      "BasePath": "_content/WebProject",
+      "RelativePath": "assets/png/celebiBarber.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\png\\celebiBarber.png"
     },
     {
       "Identity": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\css\\home.css",

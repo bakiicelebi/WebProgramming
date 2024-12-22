@@ -6,6 +6,7 @@
     background-attachment: fixed;
     min-height: 100vh;
     background-repeat: no-repeat;
+
 }
 
     .index-background::before {
