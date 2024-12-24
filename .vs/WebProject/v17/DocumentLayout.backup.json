@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|solutionrelative:wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\views\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|solutionrelative:views\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|solutionrelative:controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|solutionrelative:wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|solutionrelative:views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|solutionrelative:wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|solutionrelative:views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{568B49B9-8A19-40A1-87D4-58C7A17069EC}|WebProject.csproj|c:\\users\\baki\\onedrive\\desktop\\webprog\\webproject\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -34,32 +54,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "layout.css",
-              "DocumentMoniker": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\css\\layout.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\layout.css",
-              "ToolTip": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\css\\layout.css",
-              "RelativeToolTip": "wwwroot\\css\\layout.css",
-              "ViewState": "AgIAABEAAAAAAAAAAAAmwBkAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-22T17:17:14.712Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Services\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Services\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Services\\Index.cshtml",
+              "RelativeToolTip": "Views\\Services\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T19:37:42.956Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T17:55:44.343Z",
+              "Title": "ServicesController.cs",
+              "DocumentMoniker": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Controllers\\ServicesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ServicesController.cs",
+              "ToolTip": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Controllers\\ServicesController.cs",
+              "RelativeToolTip": "Controllers\\ServicesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T19:37:21.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T19:07:41.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T19:06:17.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "layout.css",
+              "DocumentMoniker": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\css\\layout.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\layout.css",
+              "ToolTip": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\css\\layout.css",
+              "RelativeToolTip": "wwwroot\\css\\layout.css",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAGoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-22T17:17:14.712Z",
               "EditorCaption": ""
             },
             {
@@ -70,7 +129,7 @@
               "RelativeDocumentMoniker": "wwwroot\\css\\home.css",
               "ToolTip": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\css\\home.css",
               "RelativeToolTip": "wwwroot\\css\\home.css",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAvwBcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-12-22T17:17:09.183Z",
               "EditorCaption": ""
@@ -78,19 +137,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T17:55:44.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T19:11:48.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-22T17:16:58.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -102,15 +187,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml.css",
               "DocumentMoniker": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
               "ToolTip": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-22T17:16:25.33Z"
+              "WhenOpened": "2024-12-22T17:16:25.33Z",
+              "EditorCaption": ""
             }
           ]
         }
