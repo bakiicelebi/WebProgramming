@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sd30r2GxjoqOSZWMbjnIIGbQOKSBhyzb24wYBwc7SEo=",
+  "Hash": "4weJNgdqmogAoX4Z8NzsKe/Xboc2XWHdLIxC1aoCddw=",
   "Source": "WebProject",
   "BasePath": "_content/WebProject",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\layout.css"
+    },
+    {
+      "Identity": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\css\\services.css",
+      "SourceId": "WebProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\",
+      "BasePath": "_content/WebProject",
+      "RelativePath": "css/services.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\services.css"
     },
     {
       "Identity": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\css\\site.css",

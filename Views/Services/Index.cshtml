@@ -1,9 +1,65 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<WebProject.Models.Service>
+
 @{
+    ViewData["Title"] = "Welcome to Our Barber Shop";
+
 }
 
-<div>
-    <h1>HERE IS SERVICES</h1>
+<head>
+    <link href="~/css/services.css" rel="stylesheet" />
+</head>
+
+<div class="index-background">
+    <div class="content">
+        <div class="text-center">
+            <h2>Our Services</h2>
+            <p>Choose from a variety of grooming services to look your best.</p>
+        </div>
+
+        <div class="row justify-content-center gap-5">
+            @foreach (var service in Model)
+            {
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card service cardList">
+                        <a asp-action="BookService" asp-controller="Book" asp-route-serviceName="@service.Name.ToLower()">
+                            <img src="@service.ImageUrl" class="card-img-top" alt="@service.Name">
+                        </a>
+                        <div class="card-body text-white">
+                            <h5 class="card-title">@service.Name</h5>
+                            <p class="card-text">Get a fresh, clean @service.Name from our expert barbers.</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="text-center my-5">
+            <a href="/book" class="btn btn-primary btn-lg">Book Your Appointment</a>
+        </div>
+
+        <div id="our-services" class="text-white">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h2 class="home" data-aos="fade-up">Price List</h2>
+                    </div>
+                </div>
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-md-6 col-sm-6" data-aos="fade-left">
+                        <div class="price-list">
+                            @foreach (var service in Model)
+                            {
+                                <div class="price-item">
+                                    <a asp-action="BookService" asp-controller="Book" asp-route-serviceName="@service.Name.ToLower()">
+                                        <div class="service-name">@service.Name</div>
+                                        <div class="price">@service.Price TL</div>
+                                    </a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

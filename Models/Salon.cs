@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace WebProject.Models
 {
@@ -11,18 +12,15 @@ namespace WebProject.Models
 		[MaxLength(150)]
 		public string Name { get; set; }
 
-		[Required]
-		[MaxLength(200)]
-		public string Address { get; set; }
 
-		[Required]
+		[AllowNull]
 		[MaxLength(20)]
 		public string Phone { get; set; }
 
 		[MaxLength(500)]
 		public string LogoUrl { get; set; }
 
-		[Required]
+		[AllowNull]
 		public string OpeningHours { get; set; } // can be json
 
 		public ICollection<Employee> Employees { get; set; } // employees of salon

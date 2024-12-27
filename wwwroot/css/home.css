@@ -1,27 +1,92 @@
-﻿.index-background {
+﻿body {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.background-container {
     position: relative;
     background-image: url('https://www.peluker.com/blog/wp-content/uploads/2024/02/La-Evolucion-del-Barbershop-De-Clasico-a-Moderno.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    min-height: 100vh;
     background-repeat: no-repeat;
-
+    min-height: 100vh; /* Kapsayıcı yüksekliği */
 }
 
-    .index-background::before {
+    .background-container::before {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        margin:0;
-        background: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah overlay */
+        background: rgba(0, 0, 0, 0.5); /* Yarı saydam overlay */
         z-index: 1;
     }
 
-    .index-background .content {
+    .background-container .content {
         position: relative;
         z-index: 2;
+        color: white;
+    }
+
+/* Overlay Efekti */
+.hero-overlay {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); /* Siyah yarı saydam overlay */
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Başlangıç Fotoğrafı Boyutu */
+.zoom-on-hover img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Liste Düzenlemesi */
+ul.list-unstyled li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+/* Buton ve Kartlar */
+.btn-outline-dark {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border: none;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+    .btn-outline-dark:hover {
+        background-color: #ff9800;
+        color: white;
+        transform: scale(1.1);
+    }
+
+.shadow-lg {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.gallery img {
+    width: 25rem; /* Sabit genişlik */
+    height: auto; /* Sabit yükseklik */
+    object-fit: cover; /* Görüntüyü boyuta sığdırırken kırp */
+    border-radius: 10px; /* Köşelerin yuvarlanması */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+    .gallery img:hover {
+        transform: scale(1.1); /* Hover sırasında büyütme */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Gölge efekti */
     }

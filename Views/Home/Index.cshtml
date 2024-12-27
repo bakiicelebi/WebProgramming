@@ -1,51 +1,52 @@
 ﻿@{
-    ViewData["Title"] = "Welcome to Our Barber Shop";
+    ViewBag.Title = "Welcome to Barber Studio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <head>
     <link href="~/css/home.css" rel="stylesheet" />
 </head>
 
-
-<div class="index-background">
+<div class="background-container">
     <div class="content">
-        <div class="text-center">
-            <h2>Our Services</h2>
-            <p>Choose from a variety of grooming services to look your best.</p>
-        </div>
+        <div class="container mt-5">
+            <div class="hero-overlay text-center">
+                <h1 class="display-4">Welcome to Barber Studio</h1>
+                <p class="lead">Professional grooming services tailored to you.</p>
+                <a href="/Services" class="btn btn-md btn-outline-dark">Explore Our Services</a>
+            </div>
 
-        <div class="row justify-content-center gap-5">
-            <div class="col-lg-3 col-md-3 col-sm-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Haircut">
-                    <div class="card-body">
-                        <h5 class="card-title">Haircut</h5>
-                        <p class="card-text">Get a fresh, clean haircut from our expert barbers.</p>
-                    </div>
+            <div class="row mt-5">
+                <div class="col-md-6 zoom-on-hover">
+                    <img src="https://www.shutterstock.com/image-vector/barber-shop-pole-logo-vintage-600nw-2494162501.jpg"
+                         alt="Barber Shop Image" class="img-fluid rounded-circle shadow-lg">
+                </div>
+                <div class="hero-overlay col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="text-warning">Why Choose Us?</h2>
+                    <p>Our barbers are experts in delivering the perfect haircut and grooming experience, tailored to your preferences.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-scissors text-warning"></i> Precision haircuts</li>
+                        <li><i class="bi bi-heart-fill text-warning"></i> Friendly atmosphere</li>
+                        <li><i class="bi bi-star-fill text-warning"></i> 5-star reviews</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Shave">
-                    <div class="card-body">
-                        <h5 class="card-title">Shave</h5>
-                        <p class="card-text">Enjoy a smooth shave with the finest grooming products.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Beard Grooming">
-                    <div class="card-body">
-                        <h5 class="card-title">Beard Grooming</h5>
-                        <p class="card-text">Maintain your beard with precision and care.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="text-center my-5">
-            <a href="/book" class="btn btn-primary btn-lg">Book Your Appointment</a>
+            <div class="text-center mt-5">
+                <h3 class="text-warning">Our Gallery</h3>
+                <p>Take a peek into our stylish shop and see our work.</p>
+                <div class="row gallery">
+                    <div class="col-md-4 mb-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwPAjgDWlD7EuvmlozDBVbHJYyF2vP7fOTGA&s" alt="Gallery Image 1" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5fd787d32a8a4a2604b22b5d/a1a982a2-8886-4017-a735-3fde5aeab145/msbs-barbershop-perspective-22000.jpg" alt="Gallery Image 2" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8PRxPn3EZMz_jWj6KEJ-apTCZq2ee1iWaw&s" alt="Gallery Image 3" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

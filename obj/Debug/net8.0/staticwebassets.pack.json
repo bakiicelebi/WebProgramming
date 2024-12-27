@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
     {
+      "Id": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\css\\services.css",
+      "PackagePath": "staticwebassets\\css\\services.css"
+    },
+    {
       "Id": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

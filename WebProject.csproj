@@ -18,11 +18,17 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="NewFolder\" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\assets\png\celebiBarber.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Services\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

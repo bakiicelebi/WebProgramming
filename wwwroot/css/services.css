@@ -1,0 +1,119 @@
+﻿.index-background {
+    position: relative;
+    background-image: url('https://www.peluker.com/blog/wp-content/uploads/2024/02/La-Evolucion-del-Barbershop-De-Clasico-a-Moderno.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+    .index-background::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah overlay */
+        z-index: 1;
+    }
+
+    .index-background .content {
+        position: relative;
+        z-index: 2;
+    }
+
+
+.cardList {
+    background-color: #1f2d32;
+}
+
+.service {
+    min-height: 15rem;
+}
+
+    .service img {
+        height: auto; /* Sabit yükseklik */
+        object-fit: cover; /* Görüntüyü boyuta sığdırırken kırp */
+        border-radius: 10px; /* Köşelerin yuvarlanması */
+
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+        .service img:hover {
+            transform: scale(1.1); /* Hover sırasında büyütme */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Gölge efekti */
+        }
+
+        .service img::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah overlay */
+            z-index: 1;
+        }
+
+    .service img {
+        position: relative;
+        z-index: 2;
+    }
+
+#our-services h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.price-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #1f2d32;
+}
+
+    .price-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+.service-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.barber-name {
+    font-style: italic;
+    color: #777;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none; /* Altını çizili kaldırır */
+    color: inherit; /* Yazının rengini, ebeveyn elemandan almasını sağlar */
+}
+
+.price-item a {
+    text-decoration: none; /* Altını çizili kaldırır */
+    color: white; /* Beyaz renk verir */
+}

@@ -24,31 +24,24 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link active" asp-action="Index" asp-controller="Home">Home</a>
+						<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")"
+						   asp-controller="Home" asp-action="Index">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
+						<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Services" ? "active" : "")"
+						   asp-controller="Services" asp-action="Index">Services</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" asp-action="Index" asp-controller="Services" >Get Service</a>
+						<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Employee" ? "active" : "")"
+						   asp-controller="Employee" asp-action="Index">Employees</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
+						<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Communication" ? "active" : "")"
+						   asp-controller="Communication" asp-action="Index">Communication</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" asp-action="Index" asp-controller="Services">Get Service</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" asp-action="Index" asp-controller="Services">Get Service</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
-					</li>
-					<li class="nav-item">
-						<a asp-controller="Login" asp-action="Index" class="nav-link" >Log In</a>
+						<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Login" ? "active" : "")"
+						   asp-controller="Login" asp-action="Index">Sign In</a>
 					</li>
 				</ul>
 			</div>
@@ -60,8 +53,10 @@
 		@RenderBody()
 	</div>
 
+	
+
 	<!-- Footer -->
-	<footer class="bg-dark text-white text-center py-4" >
+	<footer class="bg-dark text-white text-center py-4">
 		<p>&copy; 2024 Celebrating Barber. All rights reserved.</p>
 		<div>
 			<a href="#" class="text-white mx-3">Privacy Policy</a>
@@ -71,5 +66,7 @@
 
 	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Scripts bölümü için render tanımlaması -->
+	@RenderSection("Scripts", required: false)
 </body>
 </html>
