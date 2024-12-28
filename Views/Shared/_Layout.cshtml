@@ -32,22 +32,28 @@
 							   asp-controller="Home" asp-action="Index">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")"
+							<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Appointment" ? "active" : "")"
 							   asp-controller="Appointment" asp-action="EditAppointment">Edit Appointments</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")"
+							<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Employee" ? "active" : "")"
 							   asp-controller="Employee" asp-action="EditEmployees">Edit Employees</a>
 						</li>
 					}
 					else
 					{
+						
+
 						<li class="nav-item">
 							<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")"
 							   asp-controller="Home" asp-action="Index">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Services" ? "active" : "")"
+							<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "AI" ? "active" : "")"
+							   asp-controller="AI" asp-action="Index">Try AI</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @((ViewContext.RouteData.Values["Controller"]?.ToString() == "Services" || ViewContext.RouteData.Values["Controller"]?.ToString() == "Appointment") ? "active" : "")"
 							   asp-controller="Services" asp-action="Index">Services</a>
 						</li>
 						<li class="nav-item">

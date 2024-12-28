@@ -1,0 +1,23 @@
+﻿@{
+	ViewData["Title"] = "Result";
+}
+
+<head>
+	<link href="~/css/services.css" rel="stylesheet" />
+</head>
+
+<div class="index-background">
+	<div class="content">
+		<div class="container text-center" style="color: white; padding-top: 50px;">
+			<h1>Hair Style Result</h1>
+			<div class="card mx-auto" style="max-width: 800px; background-color: #333; padding: 20px; border-radius: 10px;">
+				<div class="mt-4">
+					<img src="@Model" alt="Hair style applied image" class="img-fluid" style="max-width: 100%; max-height: 600px; object-fit: contain;" />
+				</div>
+				<div class="mt-4">
+					<a asp-controller="AI" asp-action="Index" class="btn btn-secondary">Upload New Image</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebProject.Models;
 
@@ -11,9 +12,11 @@ using WebProject.Models;
 namespace WebProject.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    partial class DataBaseContextModelSnapshot : ModelSnapshot
+    [Migration("20241228192135_Employee")]
+    partial class Employee
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -133,6 +136,7 @@ namespace WebProject.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeId"));
 
                     b.Property<string>("Address")
+                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -143,7 +147,7 @@ namespace WebProject.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("HireDate")
+                    b.Property<DateTime>("HireDate")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("IsActive")
@@ -176,7 +180,7 @@ namespace WebProject.Migrations
                     b.Property<decimal>("Salary")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int?>("SalonId")
+                    b.Property<int>("SalonId")
                         .HasColumnType("int");
 
                     b.Property<string>("Username")
@@ -290,7 +294,8 @@ namespace WebProject.Migrations
                     b.HasOne("WebProject.Models.Salon", "Salon")
                         .WithMany("Employees")
                         .HasForeignKey("SalonId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("Salon");
                 });

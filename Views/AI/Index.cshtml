@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Apply Hair Style";
+}
+<head>
+    <link href="~/css/services.css"  rel="stylesheet"/>
+</head>
+
+<div class="index-background">
+    <div class="content">
+        <div class="container text-center" style="color: white; padding-top: 50px;">
+            <h1>Apply Hair Style</h1>
+            <div class="card mx-auto" style="max-width: 600px; background-color: #333; padding: 20px; border-radius: 10px;">
+                <form method="post" enctype="multipart/form-data" asp-controller="AI" asp-action="ApplyHairStyle">
+                    <div class="mb-3">
+                        <label for="imageFile" class="form-label text-success">Upload Image</label>
+                        <input type="file" name="imageFile" id="imageFile" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="hairStyle" class="form-label text-success">Select Hair Style</label>
+                        <select name="hairStyle" id="hairStyle" class="form-control" required>
+                            <option value="" disabled selected>Select a hair style</option>
+                            <option value="201">Long Hair</option>
+                            <option value="101">Blonde Hair</option>
+                            <option value="801">Bangs Hair</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Apply Style</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

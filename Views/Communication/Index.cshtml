@@ -1,94 +1,102 @@
 ﻿@{
-    ViewBag.Title = "Contact Us";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Contact Us";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container mt-5 text-white">
-    <h2 class="text-center mb-4">Contact Us</h2>
+<head>
+	<link href="~/css/services.css" rel="stylesheet" />
+</head>
 
-    <div class="row">
-        <div class="col-md-6">
-            <h4 class="text-white">Celebi Barber Infos</h4>
-            <ul class="list-unstyled">
-                <li><strong>Address:</strong> 123 Barber Street, Grooming City, HAIR123</li>
-                <li><strong>Phone:</strong> (123) 456-7890</li>
-                <li><strong>Email:</strong> contact@barbershop.com</li>
-                <li><strong>Opening Hours:</strong></li>
-                <ul>
-                    <li>Mon-Fri: 9:00 AM - 8:00 PM</li>
-                    <li>Sat-Sun: 10:00 AM - 6:00 PM</li>
-                </ul>
-            </ul>
-            <div class="social-icons mt-4">
-                <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
-            </div>
-        </div>
+<div class="index-background">
+	<div class="content hero-overlay-service">
 
-        <div class="col-md-6">
-            <h4 class="text-white">Send Us a Message</h4>
-            <div class="form-group mt-2">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" class="form-control bg-dark text-white" placeholder="Enter your name" />
-            </div>
+		<div class="container mt-5 text-white">
+			<h2 class="text-center mb-4">Contact Us</h2>
 
-            <div class="form-group mt-2">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" class="form-control bg-dark text-white" placeholder="Enter your email" />
-            </div>
+			<div class="row">
+				<div class="col-md-6">
+					<h4 class="text-white">Celebi Barber Infos</h4>
+					<ul class="list-unstyled">
+						<li><strong>Address:</strong> 123 Barber Street, Grooming City, HAIR123</li>
+						<li><strong>Phone:</strong> (123) 456-7890</li>
+						<li><strong>Email:</strong> contact@barbershop.com</li>
+						<li><strong>Opening Hours:</strong></li>
+						<ul>
+							<li>Mon-Fri: 9:00 AM - 8:00 PM</li>
+							<li>Sat-Sun: 10:00 AM - 6:00 PM</li>
+						</ul>
+					</ul>
+					<div class="social-icons mt-4">
+						<a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+						<a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+						<a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
+					</div>
+				</div>
 
-            <div class="form-group mt-2">
-                <label for="message">Message:</label>
-                <textarea id="message" class="form-control bg-dark text-white" rows="5" placeholder="Write your message"></textarea>
-            </div>
+				<div class="col-md-6">
+					<h4 class="text-white">Send Us a Message</h4>
+					<div class="form-group mt-2">
+						<label for="name">Your Name:</label>
+						<input type="text" id="name" class="form-control bg-dark text-white" placeholder="Enter your name" />
+					</div>
 
-            <button id="sendMessage" class="btn btn-success btn-block mt-3">Send Message</button>
-        </div>
-    </div>
+					<div class="form-group mt-2">
+						<label for="email">Your Email:</label>
+						<input type="email" id="email" class="form-control bg-dark text-white" placeholder="Enter your email" />
+					</div>
+
+					<div class="form-group mt-2">
+						<label for="message">Message:</label>
+						<textarea id="message" class="form-control bg-dark text-white" rows="5" placeholder="Write your message"></textarea>
+					</div>
+
+					<button id="sendMessage" class="btn btn-success btn-block mt-3">Send Message</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header bg-success text-white">
+						<h5 class="modal-title" id="successModalLabel">Message Sent</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						Your message has been successfully sent. Thank you for reaching out to us!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-
-<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-success text-white">
-                <h5 class="modal-title" id="successModalLabel">Message Sent</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Your message has been successfully sent. Thank you for reaching out to us!
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 @section Scripts {
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const sendMessageButton = document.getElementById('sendMessage');
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const sendMessageButton = document.getElementById('sendMessage');
 
-            sendMessageButton.addEventListener('click', () => {
-                const name = document.getElementById('name').value.trim();
-                const email = document.getElementById('email').value.trim();
-                const message = document.getElementById('message').value.trim();
+			sendMessageButton.addEventListener('click', () => {
+				const name = document.getElementById('name').value.trim();
+				const email = document.getElementById('email').value.trim();
+				const message = document.getElementById('message').value.trim();
 
-                if (!name || !email || !message) {
-                    alert('Please fill out all fields.');
-                    return;
-                }
+				if (!name || !email || !message) {
+					alert('Please fill out all fields.');
+					return;
+				}
 
-                // Show the success modal
-                const successModal = new bootstrap.Modal(document.getElementById('successModal'));
-                successModal.show();
+				// Show the success modal
+				const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+				successModal.show();
 
-                // Clear the form fields
-                document.getElementById('name').value = '';
-                document.getElementById('email').value = '';
-                document.getElementById('message').value = '';
-            });
-        });
-    </script>
+				// Clear the form fields
+				document.getElementById('name').value = '';
+				document.getElementById('email').value = '';
+				document.getElementById('message').value = '';
+			});
+		});
+	</script>
 }

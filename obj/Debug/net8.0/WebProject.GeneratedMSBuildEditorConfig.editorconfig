@@ -26,6 +26,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Baki\OneDrive\Desktop\WebProg\WebProject
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Baki/OneDrive/Desktop/WebProg/WebProject/Views/AI/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQUlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Baki/OneDrive/Desktop/WebProg/WebProject/Views/AI/Result.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQUlcUmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Baki/OneDrive/Desktop/WebProg/WebProject/Views/Appointment/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

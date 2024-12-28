@@ -41,27 +41,27 @@ namespace WebProject.Models
 		[EmailAddress]
 		public string Email { get; set; }
 
-		public DateTime HireDate { get; set; } = DateTime.Now;
+		public DateTime? HireDate { get; set; } = DateTime.Now;
 
 		[Required]
 		public AuthLevel AuthLevel { get; set; }
 
 		[MaxLength(200)]
-		public string Address { get; set; }
+		public string? Address { get; set; }
 
 		[MaxLength(500)]
-		public string ProfileImageUrl { get; set; }
+		public string? ProfileImageUrl { get; set; }
 
 		public bool IsActive { get; set; } = true;
 
 		[MaxLength(1000)]
-		public string WorkHours { get; set; }
+		public string? WorkHours { get; set; }
 
 		// Navigation Properties
-		public int SalonId { get; set; } // Foreign Key
-		public Salon Salon { get; set; } // salon of employee
+		public int? SalonId { get; set; } // Foreign Key
+		public Salon? Salon { get; set; } // salon of employee
 
-		public ICollection<Appointment> Appointments { get; set; } // appointments of employee
+		public ICollection<Appointment>? Appointments { get; set; } // appointments of employee
 	}
 
 }
