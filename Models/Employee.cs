@@ -6,9 +6,7 @@ namespace WebProject.Models
 	public enum AuthLevel
 	{
 		Admin,
-		Manager,
-		User,
-		Guest
+		User
 	}
 
 	public class Employee

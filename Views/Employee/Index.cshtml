@@ -1,11 +1,41 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<WebProject.Models.Employee>
+
 @{
+    ViewData["Title"] = "Uzman Kadromuz";
 }
 
+<head>
+    <link href="~/css/employee.css" rel="stylesheet" />
+    <link href="~/css/home.css" rel="stylesheet" />
+    <link href="~/css/services.css" rel="stylesheet" />
+</head>
 
+<div class="background-container">
+    <div class="content">
+        <div class="hero-overlay-service">
+            <h1 style="text-align: center;">Our Expert Team</h1>
+            <p style="text-align: center; font-size: 18px; color: #ccc;">
+                Meet our expert team, committed to providing you with the highest quality service!
+            </p>
+        </div>
 
-<div>
-    <p>EMPLOYEEEEE</p>
+        <div class="employee-container">
+            @foreach (var employee in Model)
+            {
+                <div class="employee-card">
+                    <img src="@employee.ProfileImageUrl" alt="@employee.Name" class="employee-photo" />
+                    <div class="employee-info">
+                        <h3>@employee.Name</h3>
+                        <p>Position: @employee.Position</p>
+                        <p>Salary: @employee.Salary.ToString("C")</p>
+                        <p>Phone: @employee.Phone</p>
+                        <p class="@(employee.IsActive ? "active" : "inactive")">
+                            @(employee.IsActive ? "Active" : "Inactive")
+                        </p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
 </div>

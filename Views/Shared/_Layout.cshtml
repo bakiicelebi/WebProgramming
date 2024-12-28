@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -23,26 +24,43 @@
 			<!-- Navbar Links -->
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto">
-					<li class="nav-item">
-						<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")"
-						   asp-controller="Home" asp-action="Index">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Services" ? "active" : "")"
-						   asp-controller="Services" asp-action="Index">Services</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Employee" ? "active" : "")"
-						   asp-controller="Employee" asp-action="Index">Employees</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Communication" ? "active" : "")"
-						   asp-controller="Communication" asp-action="Index">Communication</a>
-					</li>
-					<li class="nav-item">
+
+					@if (Context.Session.GetString("UserRole") == "Admin")
+					{
+						<li class="nav-item">
+							<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")"
+							   asp-controller="Home" asp-action="Index">Home</a>
+						</li>
+					}
+					else
+					{
+						<li class="nav-item">
+							<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")"
+							   asp-controller="Home" asp-action="Index">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Services" ? "active" : "")"
+							   asp-controller="Services" asp-action="Index">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Employee" ? "active" : "")"
+							   asp-controller="Employee" asp-action="Index">Employees</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Communication" ? "active" : "")"
+							   asp-controller="Communication" asp-action="Index">Communication</a>
+						</li>
+					}
+					@if (Context.Session.GetString("UserEmail") != null)
+					{
+						<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Login" ? "active" : "")"
+						   asp-controller="Login" asp-action="SignOut" id="signOutLink">Sign Out</a>
+					}
+					else
+					{
 						<a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Login" ? "active" : "")"
 						   asp-controller="Login" asp-action="Index">Sign In</a>
-					</li>
+					}
 				</ul>
 			</div>
 		</div>
@@ -53,7 +71,7 @@
 		@RenderBody()
 	</div>
 
-	
+
 
 	<!-- Footer -->
 	<footer class="bg-dark text-white text-center py-4">
@@ -63,6 +81,17 @@
 			<a href="#" class="text-white mx-3">Terms of Service</a>
 		</div>
 	</footer>
+
+	<!-- Sign Out JavaScript -->
+	<script>
+		document.getElementById('signOutLink')?.addEventListener('click', function (event) {
+			event.preventDefault(); // Linkin normal işleyişini engelle
+			const isConfirmed = confirm("Are you sure you want to sign out?");
+			if (isConfirmed) {
+				window.location.href = '@Url.Action("SignOut", "Login")'; // SignOut action'ını çağır
+			}
+		});
+	</script>
 
 	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>

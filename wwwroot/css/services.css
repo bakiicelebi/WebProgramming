@@ -28,14 +28,51 @@
 
 .cardList {
     background-color: #1f2d32;
+    display:flex;
+
+}
+
+.backCard {
+    display:flex;
+    flex:1;
+}
+
+.col-lg-4 {
+    flex:.3; /* Büyük ekranlarda her satıra 3 kart */
+}
+
+.col-md-6 {
+    flex:.5; /* Orta ekranlarda her satıra 2 kart */
+}
+
+.col-sm-12 {
+    flex:1; /* Küçük ekranlarda tek kart */
+}
+
+
+
+/* Overlay Efekti */
+.hero-overlay-service {
+    position: relative;
+    width:50%;
+    top: 1rem;
+    margin-bottom:2rem;
+    transform:translate(50%,0);
+    background-color: rgba(0, 0, 0, 0.5); /* Siyah yarı saydam overlay */
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    color: white;
 }
 
 .service {
-    min-height: 15rem;
+    height: 30rem;
+    width:25rem;
+    margin:1rem;
 }
 
     .service img {
-        height: auto; /* Sabit yükseklik */
+        width:20rem;
+        height: 20rem; /* Sabit yükseklik */
         object-fit: cover; /* Görüntüyü boyuta sığdırırken kırp */
         border-radius: 10px; /* Köşelerin yuvarlanması */
 
@@ -67,6 +104,10 @@
 #our-services h2 {
     margin-bottom: 20px;
     font-size: 2rem;
+}
+
+.descCard {
+    justify-content:flex-end;
 }
 
 .price-list {
@@ -116,4 +157,17 @@ a {
 .price-item a {
     text-decoration: none; /* Altını çizili kaldırır */
     color: white; /* Beyaz renk verir */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:1.2rem;
+    align-items:center;
+    justify-content: center; /* Kartları yatayda ortalar */
+}
+
+.card {
+    margin-bottom: 20px; /* Kartlar arasındaki dikey boşluğu artırır */
+    align-items:center;
 }

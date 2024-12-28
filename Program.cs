@@ -6,6 +6,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Oturumun zaman aþýmý süresi
+    options.Cookie.HttpOnly = true; // Güvenlik için sadece HTTP'den eriþim
+    options.Cookie.IsEssential = true; // Cookie'nin zorunlu olduðunu belirt
+});
 
 // Veritabaný baðlantýsýný yapýlandýrma
 builder.Services.AddDbContext<DataBaseContext>(options =>
@@ -39,6 +46,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseSession();
 
 app.UseAuthorization();
 

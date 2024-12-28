@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 namespace WebProject.Models
 {
 
@@ -27,10 +28,12 @@ namespace WebProject.Models
 		[EmailAddress]
 		public string Email { get; set; }
 
+		[AllowNull]
 		[MaxLength(500)]
-		public string ProfileImageUrl { get; set; } // can be used for profile photo
+		public string? ProfileImageUrl { get; set; } // can be used for profile photo
 
-		public ICollection<Appointment> Appointments { get; set; } // appointments of customer
+		[AllowNull]
+		public ICollection<Appointment>? Appointments { get; set; } // appointments of customer
 	}
 
 }

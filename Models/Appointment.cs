@@ -13,8 +13,7 @@ namespace WebProject.Models
 		public int EmployeeId { get; set; } // Foreign Key
 		public Employee Employee { get; set; } // Employee of appointment
 
-		[Required]
-		public int CustomerId { get; set; } // Foreign Key
+		public int? CustomerId { get; set; } // Foreign Key
 		public Customer Customer { get; set; } // customer of appointment
 
 		[Required]
@@ -25,7 +24,7 @@ namespace WebProject.Models
 		public DateTime AppointmentTime { get; set; } // appoint. date
 
 		[MaxLength(500)]
-		public string Notes { get; set; }
+		public string? Notes { get; set; }
 
 		public decimal TotalPrice { get; set; } // Total Price
 

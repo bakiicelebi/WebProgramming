@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\assets\\png\\celebiBarber.png"
     },
     {
+      "Id": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\css\\employee.css",
+      "PackagePath": "staticwebassets\\css\\employee.css"
+    },
+    {
       "Id": "C:\\Users\\Baki\\OneDrive\\Desktop\\WebProg\\WebProject\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },

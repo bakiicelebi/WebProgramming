@@ -14,10 +14,10 @@ namespace WebProject.Controllers
 
         public IActionResult Index()
         {
+            
 
-            // Veritabanından servisleri al
+            // Database getting
             var services = _context.Services.ToList();
-
 
             return View(services);
         }

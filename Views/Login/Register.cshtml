@@ -1,0 +1,64 @@
+﻿@model WebProject.Models.Customer
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<head>
+    <link href="~/css/home.css" rel="stylesheet" />
+</head>
+
+<div class="background-container">
+    <div class="content">
+        <div class="container d-flex justify-content-center align-items-center vh-100">
+            <div class="card shadow p-4" style="width: 400px; background-color: #1f2d32;">
+                <h3 class="text-center mb-4 text-white">Register</h3>
+
+                @if (ViewBag.ErrorMessage != null)
+                {
+                    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+                }
+
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                <li>@error.ErrorMessage</li>
+                            }
+                        </ul>
+                    </div>
+                }
+
+                <form asp-action="Register" asp-controller="Login" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label text-white">Full Name</label>
+                        <input placeholder="Please enter your name" type="text" class="form-control" id="name" asp-for="Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label text-white">Username</label>
+                        <input placeholder="Please enter username" type="text" class="form-control" id="username" asp-for="Username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-white">Email</label>
+                        <input placeholder="Please enter email" type="email" class="form-control" id="email" asp-for="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label text-white">Phone</label>
+                        <input placeholder="Please enter phone" type="text" class="form-control" id="phone" asp-for="Phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label text-white">Password</label>
+                        <input placeholder="Please enter password" type="password" class="form-control" id="password" asp-for="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Register</button>
+                </form>
+
+                <div class="text-center mt-3">
+                    <p class="text-white">Already have an account? <a asp-action="Index" asp-controller="Login" class="text-decoration-none">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

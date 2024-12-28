@@ -34,6 +34,7 @@
 
 /* Overlay Efekti */
 .hero-overlay {
+
     position: relative;
     background-color: rgba(0, 0, 0, 0.5); /* Siyah yarı saydam overlay */
     padding: 3rem 1rem;
