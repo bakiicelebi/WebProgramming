@@ -39,7 +39,7 @@ namespace WebProject.Migrations
                     b.Property<int>("EmployeeId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("IsConfirmed")
+                    b.Property<bool?>("IsConfirmed")
                         .HasColumnType("bit");
 
                     b.Property<string>("Notes")

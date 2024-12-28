@@ -1,0 +1,57 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+	ViewData["Title"] = "Employee List";
+}
+
+<head>
+	<link href="~/css/services.css" rel="stylesheet" />
+</head>
+
+<div class="index-background">
+	<div class="content">
+
+		<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+			<div style="background-color: #333; padding: 20px; border-radius: 10px; width: 80%; color: white;">
+				<h2 class="text-center">Employee List</h2>
+
+				<a href="@Url.Action("Create", "Employee")" class="btn btn-success mb-3">Create Employee</a>
+
+				<table class="table table-bordered table-dark" style="color: white;">
+					<thead>
+						<tr>
+							<th>Profile Picture</th>
+							<th>Name</th>
+							<th>Position</th>
+							<th>Appointments Count</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var employee in Model)
+						{
+							<tr>
+								<td>
+									@if (!string.IsNullOrEmpty(employee.ProfileImageUrl))
+									{
+										<img src="@employee.ProfileImageUrl" alt="Profile Image" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%;" />
+									}
+									else
+									{
+										<img src="https://via.placeholder.com/50" alt="No Profile Image" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%;" />
+									}
+								</td>
+								<td>@employee.Name</td>
+								<td>@employee.Position</td>
+								<td>@employee.AppointmentCount</td>
+								<td>
+									<a href="@Url.Action("Delete", "Employee", new { id = employee.EmployeeId })" class="btn btn-danger">Employee Delete</a>
+								</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

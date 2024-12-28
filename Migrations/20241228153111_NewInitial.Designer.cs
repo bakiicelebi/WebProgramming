@@ -12,8 +12,8 @@ using WebProject.Models;
 namespace WebProject.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20241228013525_AllowNullAppointmentCustomer")]
-    partial class AllowNullAppointmentCustomer
+    [Migration("20241228153111_NewInitial")]
+    partial class NewInitial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,7 +42,7 @@ namespace WebProject.Migrations
                     b.Property<int>("EmployeeId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("IsConfirmed")
+                    b.Property<bool?>("IsConfirmed")
                         .HasColumnType("bit");
 
                     b.Property<string>("Notes")

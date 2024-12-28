@@ -28,7 +28,7 @@ namespace WebProject.Models
 
 		public decimal TotalPrice { get; set; } // Total Price
 
-		public bool IsConfirmed { get; set; } = false; // Appointment isConfirmed status
+		public bool? IsConfirmed { get; set; } = null; // Appointment isConfirmed status
 	}
 
 }

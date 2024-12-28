@@ -226,7 +226,7 @@ namespace WebProject.Data.Seeders
 								CustomerId = null,
 								ServiceId = service.ServiceId,
 								AppointmentTime = appointmentTime,
-								IsConfirmed = false,
+								IsConfirmed = null,
 								TotalPrice = 0
 							});
 						}
